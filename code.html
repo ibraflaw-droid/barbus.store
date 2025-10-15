@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - Mythica Books</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+        <img src="assets/images/logo.png" alt="Mythica Books Logo" width="150">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Browse Our Catalog</h2>
+        <div>
+            <label for="genre">Genre:</label>
+            <select id="genre">
+                <option value="fantasy">Fantasy</option>
+                <option value="drama">Drama</option>
+                <option value="romance">Romance</option>
+                <option value="mystery">Mystery</option>
+            </select>
+        </div>
+
+        <div id="book-grid">
+            <div class="book-card">
+                <img src="assets/images/book-cover1.jpg" alt="Fantasy Book Cover" width="200">
+                <h3>Fantasy Novel 1</h3>
+                <p>By J.R.R. Tolkien - $19.99</p>
+                <button class="add-to-cart" data-name="Fantasy Novel 1" data-price="19.99">Add to Cart</button>
+            </div>
+            <!-- Add more dynamically in a real app -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mythica Books. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
